@@ -37,9 +37,10 @@ The __MVP__ will cover the following:
           - User.js
           - Validator.js
           - cart.js
-     - **assets/**
-          - img/
-          - fonts/
+     - **img/**
+          - .img
+          - .png
+       
           
 
 ## Links
