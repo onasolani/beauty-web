@@ -3,9 +3,6 @@
 # Descripción
 Meihua is an ecommerce beauty project where we carefully select the best makeup products so that you can enjoy their excellent quality and irresistible range of colors and products.
 
-
-***Meihua*** was developed using JavaScript as part of the [Ironhack](https://www.ironhack.com/) developer bootcamp (WebDev-FT-092020) using the [Spoonacular](https://spoonacular.com/) API.
-
 ## Minimum Viable Product
 
 The __MVP__ will cover the following:
