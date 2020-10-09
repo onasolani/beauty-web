@@ -31,6 +31,8 @@ The __MVP__ will cover the following:
      - cart.html
      - **css/**
           - style.css
+          - navbar.css
+          - footer.css
      - **js/**
           - main.js
           - Signup.js
@@ -38,8 +40,15 @@ The __MVP__ will cover the following:
           - Validator.js
           - cart.js
      - **img/**
-          - .img
-          - .png
+          - facebook-icon.png
+          - google-mas.png
+          - twitter-icon.png
+          - instagram-icon.png
+          - search-icon.png
+          - shop-icon.png
+          - user-icon.png
+          - logo.png
+          
        
           
 
@@ -52,4 +61,5 @@ The __MVP__ will cover the following:
 [Gihub Repo URL](https://github.com/onasolani/beauty-web)
 
 ### Makeup API
-[API Description](https://makeup-api.herokuapp.com)
+Meihua was developed using JavaScript as part of the Ironhack developer bootcamp (WebDev-FT-092020) using the Makeup API.
+[API](https://makeup-api.herokuapp.com)
