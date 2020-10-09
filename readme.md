@@ -1,4 +1,4 @@
-![Meihua Logo](http://www.appstic.net/assets/img/banner.png?raw=true)
+
 
 # Descripción
 Meihua is an ecommerce beauty project where we carefully select the best makeup products so that you can enjoy their excellent quality and irresistible range of colors and products.
