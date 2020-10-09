@@ -39,10 +39,11 @@ The __MVP__ will cover the following:
           - footer.css
      - **js/**
           - main.js
-          - Signup.js
-          - User.js
-          - Validator.js
+          - signup.js
+          - user.js
+          - validator.js
           - cart.js
+          - login.js
      - **img/**
           - facebook-icon.png
           - google-mas.png
