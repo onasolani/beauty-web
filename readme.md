@@ -62,5 +62,5 @@ The __MVP__ will cover the following:
 [Gihub Repo URL](https://github.com/onasolani/beauty-web)
 
 ### Makeup API
-Meihua was developed using JavaScript as part of the Ironhack developer bootcamp (WebDev-FT-092020) using
+Meihua use the 
 [Makeup API by MakeupAPI](https://makeup-api.herokuapp.com).
