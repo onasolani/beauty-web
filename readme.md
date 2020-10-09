@@ -16,12 +16,16 @@ The __MVP__ will cover the following:
 
 ## Backlog ##
 
+- Payment gateways html, CSS & JS
+
+## User Experience ##
+
 - Sort products by prices and colors
 - Find products with a search bar
 - Add items to purchase 
 
 ## Data Structure ##
-- **root/**
+- **beauty-web/**
      - index.html
      - products.html
      - single-product.html
@@ -48,10 +52,7 @@ The __MVP__ will cover the following:
           - shop-icon.png
           - user-icon.png
           - logo.png
-          
-       
-          
-
+      
 ## Links
 
 ### Trello
@@ -61,5 +62,5 @@ The __MVP__ will cover the following:
 [Gihub Repo URL](https://github.com/onasolani/beauty-web)
 
 ### Makeup API
-Meihua was developed using JavaScript as part of the Ironhack developer bootcamp (WebDev-FT-092020) using the Makeup API.
-[API](https://makeup-api.herokuapp.com)
+Meihua was developed using JavaScript as part of the Ironhack developer bootcamp (WebDev-FT-092020) using
+[Makeup API by MakeupAPI](https://makeup-api.herokuapp.com).
