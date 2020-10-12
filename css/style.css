@@ -19,12 +19,6 @@ body{
 
 /* PRODUCT SECTION */
 
-.banner0{
-    width: 100%;
-    height: 2px;
-    background-color: #DBEFF2;
-}
-
 .section-3{
     display: flex;
     justify-content: space-between;
@@ -262,7 +256,7 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 160px auto 0px auto;
+    margin: 70px auto 0px auto;
 }
 
 .login-register-box h2{
@@ -320,6 +314,7 @@ body{
       font-family: 'Poppins', sans-serif;
       font-weight: 300;
       font-size: 0.9375rem;
+      outline: none;
   }
 
   .form-wrapper button{
@@ -348,6 +343,7 @@ body{
       background-color: var(--red-color);
       padding: 10px;
       margin: 20px 0;
+      font-size: 0.9rem;
       color: #2c2c2c;
       border-radius: 5px;
       border: 1px solid #feb1b1;
