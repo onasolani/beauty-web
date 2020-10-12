@@ -3,21 +3,20 @@ async function getApi() {
       'http://makeup-api.herokuapp.com/api/v1/products.json'
     );
     const items = await response.json();
-    return items;
+    getInfo(items);
   }
   
-  async function getInfo() {
-    const productes = await getApi();
-    const oneProd = productes[0]
-
-    let text = `<img src="${oneProd.image_link}"/>
-    <h2>${oneProd.name} </h2>
-    <p>$ ${oneProd.price}</p>`
-    const div = document.getElementById('productos')
-    div.innerHTML += text
-
-    console.log(text)
-    
-  }
-  getInfo();
+  async function getInfo(prodRest) {
+    prodRest.filter(datos => {
+      let text = `<img src="${datos.image_link}"/>
+      <h2>${datos.name} </h2>
+      <p>$ ${datos.price}</p>`
+      const div = document.getElementById('productos')
+      div.innerHTML += text 
+    })
   
+  }
+  getApi()
+
+
+  /*datos.brand = button.innerHTML*/

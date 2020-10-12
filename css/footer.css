@@ -17,9 +17,10 @@ footer{
 }
 
 footer > h4{
-    font-size: 1rem;
-    letter-spacing: 2px;
-    font-weight: 400;
+    color: #2C2C2C;
+   font-weight: 600;
+   font-size: 1rem;
+   text-transform: uppercase;
 }
 
 footer hr{
@@ -108,7 +109,7 @@ footer p{
     }
     
     footer > h4{
-        font-size: 1.6rem;
+   font-size: 1.5rem;
     }
     
     footer hr{
