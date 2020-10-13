@@ -20,6 +20,10 @@ button{
     outline: none;
 }
 
+
+
+
+
 /* PRODUCT SECTION */
 
 .section-3{
@@ -48,6 +52,11 @@ button{
     font-weight: 500;
 }
 
+.section-iz hr{
+    margin: 30px 0px;
+    border: 1px solid #D0D0D0;
+}
+
 #productos{
     display: flex;
     flex-wrap: wrap;
@@ -56,7 +65,7 @@ button{
     width: 900px;
 }
 
-#productos div{
+#productos .productosolo{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -66,7 +75,7 @@ button{
 }
 
 .img-prod{
-    width: 15rem;
+    width: 12rem;
 }
 
 #productos img{
@@ -83,32 +92,42 @@ button{
 
 #productos p{
     font-size: 1.4rem;
-    font-weight: 300;    
+    font-weight: 300;
 }
 
-.filter-buttons{
+
+.filter-buttons, .filter-btn{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 30px 0px;
+    margin: 5px 0px;
 }
 
-.filter-buttons .filters{
-    margin: 10px 5px;
+.filter-buttons .filters, .filter-btn{
+    margin: 5px;
     width: auto;
-    padding: 1%;
+    padding: 0.5rem;
     border: 1px solid #feb1b1;
     background-color: transparent;
     text-transform: lowercase;
     font-weight: 400;
     font-size: 1rem;
+    cursor: pointer;
 }
 
-.filter-buttons .filters:hover, .filters:active{
+.filter-buttons .filters:hover,
+.filter-btn:hover,
+.filter-btn:active,
+.filters:active{
     background-color: #2c2c2c;
     color: #fff;
     border-color: #2c2c2c;
 }
+
+
+
+
+
 
 
 /* FAQ PAGE*/
@@ -161,6 +180,11 @@ button{
         font-weight: 400;
 
     }
+
+
+
+
+
 
 
 /* SIGNUP PAGE & LOGIN PAGE */
@@ -273,3 +297,57 @@ button{
   }
 
   
+
+
+
+
+  /* CART PAGE */
+th,
+td,
+.btn button,
+.product-item input {
+  padding: 0.75em 1em;
+}
+
+.tabla{
+    display: flex;
+    justify-content: center;
+    padding: 0 15%;
+}
+
+table#card-item {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 60px auto;
+  }
+
+  
+  table#card-item, td,
+  table input {
+    border: 1px solid #dadada;
+  }
+  
+  table input[type='number'] {
+    max-width: 4em;
+  }
+  
+  .btn {
+    display: inline-block;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  .btn-success,
+  .btn-remove {
+    color: #fff;
+  }
+  
+  .btn-success {
+    background-color: #feb1b1;
+  }
+  
+  .btn-remove {
+    background-color: #f27471;
+    width: 100px;
+    padding: 10px;
+  }
