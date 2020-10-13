@@ -1,22 +1,29 @@
 async function getApi() {
-    const response = await fetch(
-      'http://makeup-api.herokuapp.com/api/v1/products.json'
+    const response = await fetch('scripts/makeup.json'
     );
     const items = await response.json();
     getInfo(items);
   }
   
   async function getInfo(prodRest) {
-    prodRest.filter(datos => {
-      let text = `<img src="${datos.image_link}"/>
-      <h2>${datos.name} </h2>
-      <p>$ ${datos.price}</p>`
+    prodRest.filter(dato => {
+      let text = `<div><div class="img-prod"><img src="${dato.image_link}"/></div>
+      <h2>${dato.name} </h2>
+      <p>$ ${dato.price}</p></div>`
       const div = document.getElementById('productos')
-      div.innerHTML += text 
+      div.innerHTML += text
     })
   
   }
   getApi()
 
 
-  /*datos.brand = button.innerHTML*/
+  //añadir url html en la img.
+
+  /*datos.brand = button.innerHTML*/ 
+
+// pasarle la funcion a la otra pagina
+// metodo find buscar por id en una ventada emergente
+
+
+//hacer otra llamada y encontrarlo por id

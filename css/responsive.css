@@ -1,0 +1,179 @@
+/* PRODUCT SECTION */
+@media only screen and (max-width: 864px){
+    .section-3{
+        flex-wrap: wrap;
+        margin: 30px 0 30px 0;
+    }
+
+    .section-iz{
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    .section-iz h3{
+        font-size: 2rem;
+    }
+
+    .section-iz h4{
+        margin: 10px 0 0 0;
+        font-size: 1rem;
+    }
+
+    #productos{
+        width: 100%;
+    }
+
+    #productos div{
+        width: 170px;
+        margin: 10px;
+    }
+
+    #productos img{
+        margin-bottom: 10px;
+    }
+
+    #productos h2{
+        font-size: 0.9375rem;
+        margin-bottom: 5px;
+    }
+
+    #productos p{
+        font-size: 1.2rem;
+    }
+
+    .filter-buttons{
+        justify-content: flex-start;
+        margin: 10px 0px;
+    }
+
+    .filter-buttons .filters{
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .section-3{
+        margin: 20px 0 20px 0;
+    }
+
+    #productos div{
+        width: 140px;
+        margin: 2px;
+    }
+}
+
+
+/* FAQ SECTION */
+
+/*TABLET RESPONSIVE*/
+@media only screen and (max-width: 720px){
+    .banner1{
+        height: 180px;
+    }
+    
+    .faq-section{
+        margin: 40px 55px 65px 55px; 
+    }
+    
+    .faq-h2{
+        font-weight: 600;
+        font-size: 2rem;    
+    }
+    
+    .faq-blue{
+        margin: 25px 0px 25px 0px;
+        padding: 30px;
+    }
+    
+    .faq-grey{
+        margin: 25px 0px 25px 0px;
+        padding: 30px;
+    }
+    
+    .faq-question{
+        font-size: 1rem;
+        line-height: 1.2rem;
+        margin-bottom: 15px;
+    }
+    
+    .faq-text{
+        font-size: 0.95rem;
+        line-height: 1.1rem;
+    }
+    }
+
+
+/*MEDIUM MOBILE RESPONSIVE*/
+@media only screen and (max-width: 570px){
+    .banner1{
+        height: 140px;
+    }
+    
+    .faq-section{
+        margin: 30px 45px 60px 45px; 
+    }
+    
+    .faq-blue{
+        padding: 20px;
+    }
+    
+    .faq-grey{
+        padding: 20px;
+    }
+    }
+
+
+/*SMALL MOBILE RESPONSIVE*/
+@media only screen and (max-width: 320px){
+    .banner1{
+        height: 90px;
+       
+    }
+    
+    .faq-section{
+        margin: 20px 15px 60px 15px; 
+    }
+    
+    .faq-h2{
+        font-size: 1rem;
+    }
+    
+    .faq-blue{
+        margin: 15px 0px 15px 0px;
+        padding: 5px;
+    }
+    
+    .faq-grey{
+        margin: 15px 0px 15px 0px;
+        padding: 10px;
+    }
+    
+    .faq-question{
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        margin-bottom: 10px;
+
+    }
+    
+    .faq-text{
+        font-size: 0.85rem;
+        line-height: 1rem;
+    }
+    }
+    
+
+    /* REGISTER LOGIN*/
+
+    @media only screen and (max-width: 320px){
+        .login-register-box{
+            margin: 10px 2% 0px 2%;
+        }
+        
+        
+        .signup, .login{
+            padding: 20px;
+            margin-bottom: 0px;
+      
+        }
+      }
