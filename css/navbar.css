@@ -51,6 +51,22 @@
   padding: 0px 8px;
 }
 
+.nav-icons .iconShopping{
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-icons .iconShopping p{
+  position: absolute;
+  top: -10px;
+  right: -13px;
+  font-size: 0.9rem;
+  background-color: #F6CFCF;
+  padding: 4px 10px;
+  border-radius: 50%;
+  
+}
+
 .search-bar{
   display: flex;
   justify-content: flex-start;
@@ -67,15 +83,9 @@
   font-weight: 400;
 }
 
-::-webkit-input-placeholder{
+.search-bar ::-webkit-input-placeholder{
   opacity: 0;
 }
-
-
-
-
-
-
 
 
 
@@ -221,7 +231,7 @@ display: none;
     display: none;
   }
 
-  ::-webkit-input-placeholder{
+  .search-bar ::-webkit-input-placeholder{
     opacity: 1;
     font-size: 1rem;
     font-weight: 400;
