@@ -128,6 +128,8 @@ class Signup {
 
     this.errorsWrapper.appendChild(successMessageP);
 
+    this.redirect();
+
   }
 
   
@@ -169,6 +171,11 @@ class Signup {
     })
 
   }
+
+  redirect = () => {
+    setTimeout( ()=> location.assign('login.html'), 2000);
+  }
+
 }
 
 // crear una nueva instanica del Signup (objeto)
