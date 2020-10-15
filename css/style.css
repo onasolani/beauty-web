@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     box-sizing: border-box;
   }
@@ -62,13 +63,14 @@ button{
     width: 900px;
 }
 
+
 #productos .productosolo{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 200px;
-    height: auto;
+    height: 390px;
     margin: 1%;
     margin-bottom: 100px;
 }
@@ -88,10 +90,10 @@ button{
     margin-bottom: 20px;
 }
 
-
 #productos img{
     width: 100%;
     margin-bottom: 20px;
+    object-fit: scale-down;
 }
 
 #productos h2{
@@ -169,7 +171,7 @@ button{
     align-items: center;
     justify-content: center;
     z-index: 99999;
-    transition: 0.3s ease-in-out;
+    transition: 0.3s ease;
     transform: scale(0);
 }
 
@@ -390,14 +392,22 @@ button{
 th,
 td,
 .btn button,
-.product-item input {
-  padding: 0.75em 1em;
+.product-item{
+  padding: 10px 2rem;
+}
+
+table{
+
 }
 
 .tabla{
+    overflow: scroll;
     display: flex;
     justify-content: center;
-    padding: 0 15%;
+    padding: 0 20px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 table#card-item {
@@ -406,14 +416,21 @@ table#card-item {
     margin: 60px auto;
   }
 
-  
-  table#card-item, td,
-  table input {
-    border: 1px solid #dadada;
+
+  #cart-item td, table input{
+    border: none;
   }
+
+  td{
+      border: 1px solid #f0f0f0;
+  }
+
+ 
   
   table input[type='number'] {
-    max-width: 4em;
+    max-width: 2.4rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
   }
   
   .btn {
@@ -421,18 +438,24 @@ table#card-item {
     border: 0;
     cursor: pointer;
   }
-  
+
   .btn-success,
   .btn-remove {
-    color: #fff;
-  }
-  
-  .btn-success {
-    background-color: #feb1b1;
+    color: #2c2c2c;
   }
   
   .btn-remove {
-    background-color: #f27471;
-    width: 100px;
-    padding: 10px;
+    background-color: #DBEFF2;
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  .img-box-table{
+      width: 40px;
+      height: 40px;
+  }
+
+  .img-box-table img{
+      width: 100%;
+      object-fit: scale-down;
   }

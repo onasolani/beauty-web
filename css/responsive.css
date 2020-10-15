@@ -24,12 +24,12 @@
         width: 100%;
     }
 
-    #productos div{
+    #productos .productosolo{
         width: 170px;
         margin: 10px;
     }
 
-    #productos img{
+    #productos .productosolo img{
         margin-bottom: 10px;
     }
 
@@ -57,11 +57,35 @@
         margin: 20px 0 20px 0;
     }
 
-    #productos div{
-        width: 140px;
+    #productos .productosolo{
+        width: 120px;
         margin: 2px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+#productos h2{
+    font-weight: 400;
+    font-size: 0.9rem;
+
+}
+
+#productos p{
+    font-size: 0.8rem;
+}
+
+    .img-prod{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    #productos img{
+        width: 100%;
+        margin-bottom: 0px;
     }
 }
+
+
 
 
 /* FAQ SECTION */
