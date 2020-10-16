@@ -39,7 +39,7 @@ The __MVP__ will cover the following:
           - navbar.css
           - footer.css
           - responsive.css
-          - style.hove.css
+          - style-home.css
 
      - **scripts/**
           - main.js
@@ -56,6 +56,7 @@ The __MVP__ will cover the following:
           - google-mas.png
           - twitter-icon.png
           - instagram-icon.png
+          - favicon.png
       
 ## Links
 
