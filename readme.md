@@ -56,7 +56,11 @@ The __MVP__ will cover the following:
           - google-mas.png
           - twitter-icon.png
           - instagram-icon.png
+<<<<<<< HEAD
           - logo.png
+=======
+          - favicon.png
+>>>>>>> gh-page
       
 ## Links
 
