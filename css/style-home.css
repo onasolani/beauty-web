@@ -35,45 +35,58 @@ h1 {
     font-size: 84px;
 }
 
-.block-1,
-.block-2,
-.block-3,
-.block-4,
-.block-5{
-    background: rgba(246, 207, 207, 1);
+
+.block:hover{
+    -webkit-filter: blur(0);
+	filter: blur(0);
 }
 
-.block-1:hover {
+.block-1 {
     background: url(https://images.unsplash.com/photo-1595550912256-b24059bb08e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80) no-repeat 50% 50%;
     background-size: cover;
-    cursor: pointer;
+    -webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
-.block-2:hover {
+.block-2 {
     background: url(https://images.unsplash.com/photo-1570411004091-f33db096d9da?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80) no-repeat 50% 50%;
     background-size: cover;
-    cursor: pointer;
+    -webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 
 }
 
-.block-3:hover {
+.block-3 {
     background: url(https://images.unsplash.com/photo-1534143826428-81fc61582afd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=894&q=80) no-repeat 50% 80%;
     background-size: cover;
-    cursor: pointer;
+    -webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 
 }
 
-.block-4:hover {
+.block-4 {
     background: url(https://images.unsplash.com/photo-1601667253772-f2ae66512f17?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80) no-repeat 50% 50%;
     background-size: cover;
-    cursor: pointer;
+    -webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 
 }
 
-.block-5:hover {
+.block-5 {
     background: url(https://images.unsplash.com/photo-1542833807-ad5af0977050?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80) no-repeat 50% 50%;
     background-size: cover;
-    cursor: pointer;
+    -webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 
 }
 
@@ -92,4 +105,52 @@ h1 {
 .block-2 h1,
 .block-4 h1 {
     right: -60px;
+}
+
+@media only screen and (min-width: 901px){
+    .block {
+        position: relative;
+        width: 530px;
+        height: 390px;
+    }
+
+    .container {
+        margin-top: 70px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .block {
+        position: relative;
+        width: 530px;
+        height: 390px;
+    }
+
+    .container {
+        margin-top: 70px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .block {
+        position: relative;
+        width: 510px;
+        height: 390px;
+    }
+
+    .container {
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 500px){
+    .block {
+        position: relative;
+        width: 500px;
+        height: 380px;
+    }
+
+    .container {
+        margin-top: 70px;
+    }
 }

@@ -17,42 +17,45 @@ The __MVP__ will cover the following:
 ## Backlog ##
 
 - Payment gateways html, CSS & JS
+- Remove and calculate the items
+- Find products with a search bar
+
 
 ## User Experience ##
 
-- Sort products by prices and colors
-- Find products with a search bar
-- Add items to purchase 
+- Sort products by prices and brands
+- Add items to the cart 
 
 ## Data Structure ##
 - **beauty-web/**
      - index.html
      - products.html
-     - single-product.html
      - faq.html
-     - register.html
-     - signin.html
-     - cart.html
+     - register-login.html
+     - login.html
+     - signup.html
      - **css/**
           - style.css
           - navbar.css
           - footer.css
-     - **js/**
+          - responsive.css
+          - style.hove.css
+
+     - **scripts/**
           - main.js
-          - signup.js
-          - user.js
-          - validator.js
+          - Signup.js
+          - User.js
+          - Validator.js
           - cart.js
-          - login.js
+          - Login.js
+          - index.js
+          - makeup.json
+     
      - **img/**
           - facebook-icon.png
           - google-mas.png
           - twitter-icon.png
           - instagram-icon.png
-          - search-icon.png
-          - shop-icon.png
-          - user-icon.png
-          - logo.png
       
 ## Links
 
@@ -64,4 +67,7 @@ The __MVP__ will cover the following:
 
 ### Makeup API
 Meihua use the 
-[Makeup API by MakeupAPI](https://makeup-api.herokuapp.com).
+[Makeup API by MakeupAPI](https://makeup-api.herokuapp.com)
+
+### Image gallery
+Also use the [Unsplash Gallery](https://unsplash.com/) and [Flaticon icons](hhttps://www.flaticon.es/)

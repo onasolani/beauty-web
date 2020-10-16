@@ -43,7 +43,7 @@ function printProduct(dato){
               <div class="single-price">
                         <p>$ <span>${dato.price}</span></p>
                         
-                        <button id="${dato.id}" class="add-item-btn" onclick=pushToCard(this)>Add to cart</button>
+                        <button id="${dato.id}" class="add-item-btn" onclick=pushToCard(this)><span>Add to cart</span></button>
                         
               </div>
               
