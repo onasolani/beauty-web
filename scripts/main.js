@@ -43,7 +43,7 @@ function printProduct(dato){
               <div class="single-price">
                         <p>$ <span>${dato.price}</span></p>
                         
-                        <button id="${dato.id}" class="add-item-btn" onclick=pushToCard(this)>Add to cart</button>
+                        <button id="${dato.id}" class="add-item-btn" onclick=pushToCard(this)><span>Add to cart</span></button>
                         
               </div>
               
@@ -54,32 +54,51 @@ function printProduct(dato){
 
 // Producto en ventana emergente
 
-function printToCart(printItem){
-    let printCartProduct = 
-    `<tr class="product-item">
-    <td class="action">
-        <button class="btn btn-remove">Remove</button>
-    </td>
-    <td class="img-item">
-        <div class="img-box-table">
-            <img src="${printItem.image}"/>
-        </div>
-    </td>
-    <td class="name-item">
-    <span>${printItem.name}</span>
-    </td>
-    <td class="price-item">$<span>${printItem.price}</span></td>
-    <td class="quantity-item">
-    <input type="number" value="0" min="0"/>
-    </td>
-    <td class="subtotal">$<span>0</span></td>
-    
-</tr>`
+function printProductCard(printItem){
+  // let tabla = document.querySelector('#card-item"')
+  // const row = tabla.createElement('tr');
+  // row.className = "product-item";
+  let productToPrint = `
+  <tr class="product-item">
+      <td class="action">
+          <button class="btn btn-remove">Remove</button>
+      </td>
+      <td class="img-item">
+          <div class="img-box-table">
+              <img src="${printItem.img}"/>
+          </div>
+      </td>
+      <td class="name-item">
+      <span>${printItem.name}</span>
+      </td>
+      <td class="price-item">$<span>${printItem.price}</span></td>
+      <td class="quantity-item">
+      <input type="number" value="0" min="0"/>
+      </td>
+      <td class="subtotal">$<span>0</span></td></tr>`
+      
+  return productToPrint
+  // tabla.appendChild(row)
+  };
 
-return printCartProduct;
-}
 
 
+
+  //para que se muestre la actualizacion del carrito hay que hacer refresh
+  async function printCart(){
+    let productos = await getAllProducts()
+    // console.log("hola", productos)
+    stringToPrint = ""
+    productos.map(element => {
+  stringToPrint += printProductCard(element)
+    });
+    // console.log(stringToPrint)
+    document.getElementById('card-item').innerHTML = stringToPrint;
+  }
+
+
+
+// Descargar cosas del localStorage
 const getAllProducts = () => {
   // recuperar el string
   const cartStr = localStorage.getItem("cart");
@@ -95,12 +114,14 @@ const getAllProducts = () => {
 
 }
 
+
+// Subir cosas en el localStorage
 const saveNewItem = (newItem) => {
 
-  // recuperar el array de los usuarios del localStorage
+  // recuperar el array de los productos del localStorage
   const cartArr = getAllProducts();
 
-  // actualizar el array de usuarios
+  // actualizar el array de compra
   cartArr.push(newItem);
 
   // convertir el array a un string
@@ -147,22 +168,52 @@ const saveNewItem = (newItem) => {
 //           element.addEventListener("click", pushToCard())
 
 //       })
-
-
-
-        
 //         };
 // ;
 
+
+
+// function printToCart(printItem){
+//   let tabla = document.querySelector('#card-item"')
+//   const row = tabla.createElement('tr');
+//   row.className = "product-item";
+//   row.innerHTML = `
+//       <td class="action">
+//           <button class="btn btn-remove">Remove</button>
+//       </td>
+//       <td class="img-item">
+//           <div class="img-box-table">
+//               <img src="${printItem.image}"/>
+//           </div>
+//       </td>
+//       <td class="name-item">
+//       <span>${printItem.name}</span>
+//       </td>
+//       <td class="price-item">$<span>${printItem.price}</span></td>
+//       <td class="quantity-item">
+//       <input type="number" value="0" min="0"/>
+//       </td>
+//       <td class="subtotal">$<span>0</span></td>`
+//       return printToCart;
+// };
+
+
+let counter = 0
+
+//push to card button
 function pushToCard(product){
+  //counter ++
+  //let cntshop = document.querySelector('.counterShop')
+  //cntshop.innerHTML = counter
   // console.log(product.parentElement.parentElement)
+
   let divProd = product.parentElement.parentElement;
-  console.log(divProd)
+  // console.log(divProd)
   let prodName = divProd.querySelector('h2').textContent;
-  console.log(prodName)
+  // console.log(prodName)
   let prodPrice = divProd.querySelector('span').textContent;
   let prodImg = divProd.querySelector('img').src;
-  console.log(prodImg)
+  // console.log(prodImg)
 
 let prodObj = {
    name: prodName,
