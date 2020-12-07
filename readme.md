@@ -12,13 +12,14 @@ The __MVP__ will cover the following:
 - __FAQ:__ Everything you need to know about ***Meihua*** delivery sistem.
 - __Signup:__ A registration form for new users.
 - __Login:__ A sign in form for existing users.
-- __Shopping cart:__ Where you will add the items to the shopping cart.
+- __Shopping cart:__ Where you will add the items to the shopping cart using the local storage.
 
 ## Backlog ##
 
 - Payment gateways html, CSS & JS
 - Remove and calculate the items
-- Find products with a search bar
+- Find products with a search bar.
+- Open the product details.
 
 
 ## User Experience ##
@@ -56,11 +57,7 @@ The __MVP__ will cover the following:
           - google-mas.png
           - twitter-icon.png
           - instagram-icon.png
-<<<<<<< HEAD
-          - logo.png
-=======
           - favicon.png
->>>>>>> gh-page
       
 ## Links
 
