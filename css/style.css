@@ -70,7 +70,8 @@ button{
     justify-content: space-between;
     align-items: center;
     width: 200px;
-    height: 390px;
+    min-height: 330px;
+    height: auto;
     margin: 1%;
     margin-bottom: 100px;
 }
@@ -85,26 +86,26 @@ button{
 }
 
 .img-prod{
-    width: 12rem;
-    height: 12rem;
-    margin-bottom: 20px;
+    width: 9rem;
+    height: 9rem;
+    margin: 0 auto 20px auto;
 }
 
 #productos img{
     width: 100%;
-    margin-bottom: 20px;
     object-fit: scale-down;
 }
 
 #productos h2{
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: 500;
+    font-size: 14px;
     word-wrap: break-word;
+    margin-top: 50px;
     margin-bottom: 10px;
 }
 
 #productos p{
-    font-size: 1.4rem;
+    font-size: 16px;
     font-weight: 300;
 }
 
